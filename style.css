@@ -1,0 +1,57 @@
+/* Reset body */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    font-family: monospace;
+}
+
+/* Message fade-in */
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #33ff00d3;       /* Classic Matrix green */
+    opacity: 0;             /* مخفي افتراضيًا */
+    transition: opacity 2s ease; /* يظهر تدريجيًا */
+}
+
+/* Container for heading and button */
+.form-container {
+    position: absolute;
+    top: 65%;   /* Slightly below the message */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;               /* مخفي افتراضيًا */
+    transition: opacity 2s ease; /* يظهر تدريجيًا */
+}
+
+/* Heading inside the container */
+.form-container h1 {
+    color: #33ff00d3;  /* Matrix green */
+    margin-bottom: 20px;
+}
+
+/* Google Form button styling */
+.form-button {
+    display: inline-block;             
+    padding: 15px 35px;                
+    font-size: 18px;                   
+    font-weight: bold;                 
+    color: #000;                       
+    background: linear-gradient(45deg, #33ff00, #00ff00); 
+    text-decoration: none;             
+    border-radius: 12px;               
+    box-shadow: 0 0 10px #33ff00, 0 0 20px #33ff00, 0 0 30px #33ff00; 
+    transition: all 0.3s ease;        
+}
+
+/* Hover effect for button */
+.form-button:hover {
+    transform: translateY(-3px);       
+    box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00; 
+    background: linear-gradient(45deg, #00ff00, #99ff99); 
+}
