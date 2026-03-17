@@ -38,7 +38,7 @@ setInterval(draw, 33);
 setTimeout(() => {
     document.getElementById("message").style.opacity = 1;
     document.querySelector(".form-container").style.opacity = 1;
-}, 5000);
+}, 2500);
 
 // Adjust canvas on resize
 window.addEventListener("resize", () => {
